@@ -1,0 +1,37 @@
+// font
+$font-global: 'Roboto', sans-serif;
+
+// color
+$color-global: #000000;
+$color-extra: #606060;
+$color-secondary: #252525;
+$color-info: #444444;
+$color-service: #232323;
+$color-base: #BC5D1D;
+$color-basic: #FFDD8E;
+$color-general: #605F5F;
+$color-primary: #FEB302;
+$color-dark: #343030;
+$color-factory: #F6F9FF;
+$color-danger: #DA5C5C;
+
+// screen
+$viewport-xlg: 1400px;
+$viewport-pre-xlg: $viewport-xlg - 1px;
+$viewport-post-xlg: $viewport-xlg + 1px;
+
+$viewport-lg: 1280px;
+$viewport-pre-lg: $viewport-lg - 1px;
+$viewport-post-lg: $viewport-lg + 1px;
+
+$viewport-md: 1070px;
+$viewport-pre-md: $viewport-md - 1px;
+$viewport-post-md: $viewport-md + 1px;
+
+$viewport-sm: 768px;
+$viewport-pre-sm: $viewport-sm - 1px;
+$viewport-post-sm: $viewport-sm + 1px;
+
+$viewport-xs: 480px;
+$viewport-pre-xs: $viewport-xs - 1px;
+$viewport-post-xs: $viewport-xs + 1px;

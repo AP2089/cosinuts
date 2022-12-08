@@ -1,0 +1,23 @@
+.heading-base {
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 1px;
+  color: $color-dark;
+  padding: 0;
+
+  @include media('min', $viewport-post-lg) {
+    font-size: 72px;
+    margin: 0 0 30px 0;
+  }
+  
+  @include media(null, $viewport-post-md, $viewport-lg) {
+    font-size: 50px;
+    margin: 0 0 20px 0;
+  }
+  
+  @include media('max', $viewport-md) {
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+}
