@@ -32,8 +32,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-.pagination::v-deep {
+<style lang="scss">
+.pagination {
   display: flex;
   align-items: center;
   justify-content: flex-start;
