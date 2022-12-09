@@ -12,7 +12,7 @@
         <div v-html="content"></div>
         
         <Emblem
-          src="03.png"
+          src="/uploads/03.png"
           alt="Cosinuts"
         />
       </div>
