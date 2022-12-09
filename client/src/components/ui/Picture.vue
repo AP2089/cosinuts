@@ -1,12 +1,13 @@
 <template>
   <picture>
-    <source 
+    <source
+      v-if="webp"
       :srcset="webp"
-      type="image/webp" 
+      type="image/webp"
     />
 
     <img
-      :src="any"
+      :src="src"
       :alt="alt"
       loading="lazy"
     />
@@ -22,17 +23,12 @@ export default {
       required: true,
       default: ''
     },
+    webp: {
+      type: String
+    },
     alt: {
       type: String,
       default: ''
-    }
-  },
-  computed: {
-    any() {
-      return this.src ? require(`@/images/${this.src}`) : '';
-    },
-    webp() {
-      return this.any ? this.any.replace(/\.[^/.]+$/, '.webp') : '';
     }
   }
 }

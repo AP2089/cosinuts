@@ -1,12 +1,12 @@
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
-const ImageminWebpWebpackPlugin= require('imagemin-webp-webpack-plugin');
 const path = require('path');
-const {VUE_APP_CLIENT_PORT} = process.env;
+const {VUE_APP_SERVER_URL, VUE_APP_CLIENT_PORT} = process.env;
 
 module.exports = {
   outputDir: path.join(__dirname, '..', 'server', 'public'),
   devServer: {
-    port: VUE_APP_CLIENT_PORT
+    port: VUE_APP_CLIENT_PORT,
+    proxy: VUE_APP_SERVER_URL
   },
   css: {
     loaderOptions: {
@@ -42,8 +42,7 @@ module.exports = {
     plugins: [
       new SpriteLoaderPlugin({
         plainSprite: true
-      }),
-      new ImageminWebpWebpackPlugin()
+      })
     ]
   }
 }

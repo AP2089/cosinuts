@@ -15,7 +15,7 @@
     <div class="banner-base__right">
       <Picture
         class="banner-base__image"
-        src="01.png"
+        src="/uploads/01.png"
         alt="Dried Fruits"
       />
     </div>
