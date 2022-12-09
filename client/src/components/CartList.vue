@@ -28,10 +28,11 @@
           {{item.price}} {{currency}}
         </div>
 
-        <ButtonClose
-          class="cart__product-btn"
-          @click="$emit('cartChange', item.id)"
-        />
+        <div class="cart__product-btn">
+          <ButtonClose
+            @click="$emit('cartChange', item.id)"
+          />
+        </div>
       </div>
     </div>
   </div>

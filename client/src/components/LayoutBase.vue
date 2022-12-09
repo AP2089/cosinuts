@@ -26,6 +26,7 @@
               <MenuSecondary
                 :heading="$t('categories')"
                 :items="MenuBase"
+                @change="menuCatalogChange"
               />
             </div>
           </div>

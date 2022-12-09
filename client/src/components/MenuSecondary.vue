@@ -16,6 +16,7 @@
         <router-link
           :to="item.link"
           class="menu-secondary__link"
+          @click="$emit('change', false)"
         >
           {{item.name}}
         </router-link>
